@@ -1,1 +1,2 @@
-学校 用户名 密码
+学校 网址 用户名 密码
+兰州大学 http://lzu.myubbs.com/ cxbz_1998 suanfabbw
