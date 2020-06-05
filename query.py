@@ -11,8 +11,7 @@ import sqlite3 as sql
 con = sql.connect('database.db')
 cur = con.cursor()
 # cur.execute('insert into secret_list values(?, ?, ?, ?, ?)',
-#             (1, '兰州大学', 'http://lzu.myubbs.com/', 'cxbz_1998', 'suanfabbw'))
-cur.execute("insert into secret_list values(3, '厦门大学', 'http://xmu.23du.com/', 'LeetCodeKing', 'suanfa!1234')")
+#             (4, '海南大学', 'http://www.ihain.cn/', 'cxbz_1998', 'suanfabbw'))
 con.commit()
 print(cur.execute('select * from secret_list').fetchall())
 cur.close()
