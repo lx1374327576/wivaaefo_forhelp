@@ -30,7 +30,7 @@ static int get_position(Graph g, char ch)
 	}
 	for (i = 0; i<g.vexPC; i++){ 
 		if (g.vexs[i].PC == ch)
-			return i;
+			return i+g.vexRT;
 	} 
 	return -1;
 }
@@ -87,7 +87,7 @@ Graph* create_graph()
 			free(pG);
 			return NULL;
 		}
-		pG->matrix[p1][p2 + pG -> vexRT] = 1;
+		pG->matrix[p1][p2] = 1;
 	}
 	return pG;
 }
