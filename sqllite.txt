@@ -1,0 +1,16 @@
+﻿table_name:person_list
+id  primary key
+name
+school
+education 学历
+grade 年级
+
+
+table_name:work_list
+id  primary key
+name_id 外键 name_list id
+company_name
+station 岗位
+choice
+program
+price
