@@ -10,8 +10,11 @@ password: 密码
 import sqlite3 as sql
 con = sql.connect('database.db')
 cur = con.cursor()
+# cur.execute('insert into person_list values(?, ?, ?, ?, ?)',
+#             (1,'cd0iqh9unclw21','广东垃圾一本', '研究生', '研二'))
 cur.execute('insert into work_list values(?, ?, ?, ?, ?,?,?)',
-            (2,2,'哈工大', 'http://www.myhit.cn', 'LeetCodeKing', 'suanfa!1234',546))
+            (1,1,'shopee','海外开发', 25, 1,130))
+# cur.execute('delete from person_list where id=1')
 # cur.execute('update secret_list set bbs_url="http://bbs.csu.edu.cn/bbs/" where id=6')
 con.commit()
 print(cur.execute('select * from work_list').fetchall())
